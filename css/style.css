@@ -1,1 +1,120 @@
 @import url(variables.css);
+*{
+    background-color: var(--color--one);
+    color: var(--color--five);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.header{
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main {
+    height: 60%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "ilera1 ilera2 ilera3"
+    ;
+}
+
+/*ilera1*/
+.main .ilera1 {
+    grid-area: ilera1;
+}
+.main .ilera1 ul {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.main .ilera1 ul .box {
+    display: flex;
+}
+
+/*ilera2*/
+.main .ilera2 {
+    grid-area: ilera2;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1.5fr;
+    grid-template-areas:
+    ". box1 box2 box3 box4 . "
+    "box5 box6 box7 box8 box9 . "
+    "box10 box10 box7 . . . "
+    ". . box7 . . . "
+    ;
+}
+.main .ilera2 div{
+    margin: 10px;
+    background: var(--color--two);
+}
+.main .ilera2 div h4{
+    background: var(--color--two);
+}
+.main .ilera2 div h1{
+    background: var(--color--two);
+}
+.main .ilera2 div h3{
+    background: var(--color--two);
+}
+.main .ilera2 .box1{
+    grid-area: box1;
+}
+.main .ilera2 .box2{
+    grid-area: box2;
+}
+.main .ilera2 .box3{
+    grid-area: box3;
+}
+.main .ilera2 .box4{
+    grid-area: box4;
+}
+.main .ilera2 .box5{
+    grid-area: box5;
+}
+.main .ilera2 .box6{
+    grid-area: box6;
+}
+.main .ilera2 .box7{
+    grid-area: box7;
+}
+.main .ilera2 .box8{
+    grid-area: box8;
+}
+.main .ilera2 .box9{
+    grid-area: box9;
+}
+.main .ilera2 .box10{
+    grid-area: box10;
+}
+
+
+.main .ilera3 {
+    grid-area: ilera3;
+    background-color: green;
+}
+
+
+
+.footer {
+    height: 20%;
+    background-color: plum;
+    display: flex;
+}
+img {
+    width: 50px;
+    height: 50px;
+}
